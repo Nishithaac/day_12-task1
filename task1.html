@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <style>
+        .form{
+            border:1px solid black;
+            padding:10px;
+            width:900px;
+            height:800px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        img{
+            height:7px;
+            
+        }
+        .img1{
+            height:50px;
+        }
+       
+      td{
+        text-align: center;
+      }
+      tr:nth-child(even){
+        background-color: rgb(241, 237, 237);
+
+      }
+     
+     
+     .stars{
+        width:350px;
+        background-color: white;
+        font-size:25px;
+        color:goldenrod;
+     }
+     .rating{
+     display:none ; 
+     }    
+     label{
+        cursor:pointer;
+     }
+     input:checked +label ~label{
+        color:#dddddd
+
+     }
+     
+    </style>
+</head>
+<body>
+    <form class="form"   >
+        <label   for="Name"><b>Name</b><sup><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Red_star.svg/330px-Red_star.svg.png"></sup> </label><br><br>
+        
+        <label for="First">First:</label> <input style="height:25px"type="text" name="" id="Name">
+      
+
+        
+        <label for="Last"> Last:</label> <input style="height:25px" type="text" name="" id="Last">
+        
+
+<br><br>
+        <label  for="Email"><b>Email</b><sup><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Red_star.svg/330px-Red_star.svg.png"></sup> </label><br>
+        <input style="width:410px;height:25px" type="email" name="" id="Email">
+    <div >
+        <p><b>Your Experience</b><sup><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Red_star.svg/330px-Red_star.svg.png"></sup> </p>
+<div class="stars">
+        <input class="rating" type="radio" name="rating" id="star1">
+        <label for="star1" class="fa fa-star"></label>
+
+        <input class="rating"type="radio" name="rating" id="star2">
+        <label for="star2" class="fa fa-star"></label>
+
+        <input class="rating" type="radio" name="rating" id="star3">
+        <label for="star3" class="fa fa-star"></label>
+
+        <input class="rating" type="radio" name="rating" id="star4">
+        <label for="star4" class="fa fa-star"></label>
+
+        <input class="rating" type="radio" name="rating" id="star5">
+        <label for="star5" class="fa fa-star"></label>
+    </div>
+    </div>
+
+    <p>Overall, how would you rate you experience with us?
+    </p>
+    
+
+    <p><b>How satisfied are you with</b><sup><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Red_star.svg/330px-Red_star.svg.png"></sup></p>
+<table style="width:800px; border-collapse: collapse; " >
+    <tr>
+        <td></td>
+        <th style="font-family: 'Times New Roman', Times, serif;" scope="col">Very Unsatisfied</th>
+        <th style="font-family: 'Times New Roman', Times, serif;"scope="col"> Unsatisfied</th>
+        <th style="font-family: 'Times New Roman', Times, serif;"scope="col"> Neutral</th>
+        <th style="font-family: 'Times New Roman', Times, serif;"scope="col"> Satisfied</th>
+        <th style="font-family: 'Times New Roman', Times, serif;" scope="col"> Very Satisfied</th>
+
+    </tr>
+    <tr>
+        <th style="text-align:left; font-family: 'Times New Roman', Times, serif;" ;scope="row">Purchase</th>
+        <td><input type="radio" name="radio" id="radio"></td>
+        <td><input type="radio" name="radio" id="radio"></td>
+        <td><input type="radio" name="radio" id="radio"></td>
+        <td><input type="radio" name="radio" id="radio"></td>
+        <td><input type="radio" name="radio" id="radio"></td>
+
+    </tr>
+    
+    <tr>
+        <th style="text-align:left; font-family: 'Times New Roman', Times, serif;"scope="row">Service</th>
+        <td><input  type="radio" name="radio" id="radio"></td>
+        <td><input type="radio" name="radio" id="radio"></td>
+        <td><input type="radio" name="radio" id="radio"></td>
+        <td><input type="radio" name="radio" id="radio"></td>
+        <td><input type="radio" name="radio" id="radio"></td>
+
+    </tr>
+
+    <tr>
+        <th style="text-align:left; font-family: 'Times New Roman', Times, serif;"scope="row">Company Overall</th>
+        <td><input  type="radio" name="radio" id="radio"></td>
+        <td><input type="radio" name="radio" id="radio"></td>
+        <td><input type="radio" name="radio" id="radio"></td>
+        <td><input type="radio" name="radio" id="radio"></td>
+        <td><input type="radio" name="radio" id="radio"></td>
+
+    </tr>
+        </table>
+    <p><b>How Likely are you to</b><sup><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Red_star.svg/330px-Red_star.svg.png"></sup></p>
+    <table style="width:800px; border-collapse: collapse; " >
+        <tr>
+            <td></td>
+            <th style="font-family: 'Times New Roman', Times, serif;" scope="col">Very Unlikely</th>
+            <th style="font-family: 'Times New Roman', Times, serif;"scope="col"> Unlikely</th>
+            <th style="font-family: 'Times New Roman', Times, serif;"scope="col"> Neutral</th>
+            <th style="font-family: 'Times New Roman', Times, serif;"scope="col"> Likely</th>
+            <th style="font-family:'Times New Roman', Times, serif"scope="col"> VeryLikely </th>
+    
+        </tr>
+        <tr>
+            <th style="text-align:left; font-family: 'Times New Roman', Times, serif;" ;scope="row">Buy from us again</th>
+            <td><input  type="radio" name="radio" id="radio"></td>
+            <td><input type="radio" name="radio" id="radio"></td>
+            <td><input type="radio" name="radio" id="radio"></td>
+            <td><input type="radio" name="radio" id="radio"></td>
+            <td><input type="radio" name="radio" id="radio"></td>
+    
+        </tr>
+        
+        <tr>
+            <th style="text-align:left;font-family: 'Times New Roman', Times, serif;"scope="row">Recommend our<br> product to others</th>
+            <td><input  type="radio" name="radio" id="radio"></td>
+            <td><input type="radio" name="radio" id="radio"></td>
+            <td><input type="radio" name="radio" id="radio"></td>
+            <td><input type="radio" name="radio" id="radio"></td>
+            <td><input type="radio" name="radio" id="radio"></td>
+    
+        </tr>
+    
+        <tr>
+            <th style="text-align:left;font-family: 'Times New Roman', Times, serif;"scope="row">Recommend our<br> company to others</th>
+            <td><input  type="radio" name="radio" id="radio"></td>
+            <td><input type="radio" name="radio" id="radio"></td>
+            <td><input type="radio" name="radio" id="radio"></td>
+            <td><input type="radio" name="radio" id="radio"></td>
+            <td><input type="radio" name="radio" id="radio"></td>
+    
+        </tr>
+            </table><br>
+
+<label for="Additional comments or suggestions"><b>Additional comments or suggestions</b></label><br>
+
+<textarea id="Additional comments or suggestions" name="Additional comments or suggestions" rows="6" cols="115"></textarea><br><br>
+
+
+        <input style="height:50px; width:80px;font-family: 'Times New Roman', Times, serif;font-size: 18px;" type="submit" value="Submit">
+    </form>
+
+    
+</body>
+</html>
